@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Home</title>
-    <link rel="stylesheet" href="../dashboard/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h2>Welcome, <span id="username"></span> 👋</h2>
-    <div class="dashboard-cards">
-      <div class="card">
-        <h3>💰 My Balance</h3>
-        <p id="balance">Ghc0</p>
+    <main>
+      <h2>Welcome, <span id="username"></span> 👋</h2>
+      <div class="dashboard-cards">
+        <div class="card">
+          <h3>💰 My Balance</h3>
+          <p id="balance">Ghc0</p>
+        </div>
+        <div class="card">
+          <h3>📑 Transactions</h3>
+          <p id="transactionsCount">0</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>📑 Transactions</h3>
-        <p id="transactionsCount">0</p>
-      </div>
-    </div>
+    </main>
 
     <script src="js/home.js"></script>
   </body>
