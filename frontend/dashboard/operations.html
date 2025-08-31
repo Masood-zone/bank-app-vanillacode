@@ -1,0 +1,44 @@
+<h1>Account Operations</h1>
+
+<div class="form-card">
+  <form id="operationForm">
+    <!-- Select User -->
+    <div class="form-group">
+      <label for="userSelect">Select User</label>
+      <select id="userSelect" required></select>
+    </div>
+
+    <!-- Operation Type -->
+    <div class="form-group">
+      <label for="operationType">Operation</label>
+      <select id="operationType">
+        <option value="deposit">Deposit</option>
+        <option value="withdraw">Withdraw</option>
+        <option value="transfer">Transfer</option>
+      </select>
+    </div>
+
+    <!-- Amount -->
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input
+        type="number"
+        id="amount"
+        placeholder="💵 Enter amount"
+        min="1"
+        required
+      />
+    </div>
+
+    <!-- Transfer To -->
+    <div class="form-group" id="transferToWrapper" style="display: none">
+      <label for="transferTo">Transfer To (Email)</label>
+      <select id="transferTo"></select>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">✅ Submit</button>
+    <div id="opResult" class="form-message"></div>
+  </form>
+</div>
+
+<script src="js/operations.js"></script>

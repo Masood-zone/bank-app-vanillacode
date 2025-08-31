@@ -1,0 +1,70 @@
+<h2>👥 Users</h2>
+
+<button id="openUserModal" class="btn btn-primary">➕ Register User</button>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody id="usersTable"></tbody>
+  </table>
+</div>
+
+<!-- Register User Modal -->
+<div id="userModal" class="modal">
+  <div class="modal-content form-card">
+    <span class="close">&times;</span>
+    <h3>Register New User</h3>
+    <form id="registerUserForm">
+      <div class="form-group">
+        <label>Username</label>
+        <input
+          type="text"
+          id="newUsername"
+          placeholder="Enter username"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input
+          type="email"
+          id="newUserEmail"
+          placeholder="Enter email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="newName" placeholder="Full name" required />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input
+          type="password"
+          id="newPassword"
+          placeholder="Create password"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label>Role</label>
+        <select id="newRole" required>
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Register</button>
+    </form>
+    <p id="registerResult" class="form-message"></p>
+  </div>
+</div>
+
+<script src="js/users.js"></script>

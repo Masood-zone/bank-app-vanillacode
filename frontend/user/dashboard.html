@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../dashboard/css/styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h2>👤 User Dashboard</h2>
+      <ul>
+        <li><a href="home.html" target="contentFrame">🏠 Home</a></li>
+        <li>
+          <a href="transactions.html" target="contentFrame"
+            >📑 My Transactions</a
+          >
+        </li>
+        <li>
+          <a href="operations.html" target="contentFrame">💳 My Operations</a>
+        </li>
+        <li><a href="../index.html" id="logoutBtn">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <iframe name="contentFrame" src="home.html"></iframe>
+    </main>
+
+    <script src="js/userDashboard.js"></script>
+  </body>
+</html>
